@@ -1,0 +1,423 @@
+/* Page1----------------------------------------------------------------------------- */
+.header
+{
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+}
+.lang-sec
+{
+    position: relative;
+    right: inherit;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lang-sec a{
+    text-decoration: none;
+    color: white;
+}
+.language
+{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.language i{
+    margin-top: 4px;
+}
+.navbar{
+    height: 60px;
+    background-color:transparent;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navbar a{
+    font-family:'Times New Roman', Times, serif ;
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+}
+.navbar:hover
+{
+    background-color:#80714c;
+    color:white;
+
+}
+.logo{
+    background-image: url("images/leela-logo.png");
+    background-size: contain;
+    height: 65px;
+    width: 70px;
+}
+.empty_cont
+{
+    width: 300px;
+}
+.reserve
+{
+    position: relative;
+    right: inherit;
+    border: 2px solid white;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+}
+.reserve:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+}
+
+@keyframes back-image
+{
+    0% {background-image:url(images/lobby2.jpg);}
+    10% {background-image:url(images/back2.jpg);}
+    20% {background-image:url(images/back3.jpg);}
+    30% {background-image:url(images/back4.jpg);}
+    40% {background-image:url(images/back5.png);}
+    50% {background-image:url(images/back\ 6.png);}
+    60% {background-image:url(images/back\ 7.jpg);}
+    70% {background-image:url(images/back11.jpg);}
+    80% {background-image:url(images/back9.jpg);}
+    90% {background-image:url(images/back10.jpg);}
+    100% {background-image:url(images/back11.jpg);}
+
+}
+.body1
+{
+    height: 750px;
+    background-size:cover;
+    animation-name: back-image;
+    animation-duration: 44s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+}
+.text_over
+{
+    background-color: rgba(128, 113, 76, 0.5);
+    height: 250px;
+    width: 550px;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 75px;
+}
+.line1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.before
+{
+    width: 61px;
+    height: 1px;
+    background-color: white;
+}
+.welcome
+{
+    padding: 0px 5px 0px 5px ;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+.after
+{
+    width: 61px;
+    height: 1px;
+    background-color: white;
+}
+.line2
+{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    letter-spacing: 6px;
+    word-spacing: 8px;
+}
+.after-line
+{
+    width: 500px;
+    height: 1px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.box:hover{
+    transform: scale(1.2);
+    transition-timing-function:ease-in-out;
+    transition-duration: 2s;
+}
+/* Page2----------------------------------------------------------------------------- */
+.page2
+{
+    width: 100%;
+    height: 890px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes page2{
+    0% {background-image: url(images/pg2.1.jpg);}
+    33% {background-image: url(images/pg2.2.jpg);}
+    66% {background-image: url(images/pg2.3.jpg);}
+    100% {background-image: url(images/room2.png);}
+}
+.txt2
+{
+    width: 30%;
+    height: 700px;
+    padding: 100px;
+    margin: 100px 0px 100px 0px ;
+}
+.heading{
+    color: #80714c;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.line{
+    width: 50px;
+    height: 1.5px;
+    background-color: #80714c;
+
+}
+.txt2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: normal;
+    color: #404040;
+}
+.pictures2
+{
+    width: 75%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    animation: page2 10s steps(1) 2s infinite;
+}
+.pictures2:hover
+{
+    transform:scale(1.1);
+}
+
+/*page3---------------------------------------------------------------------------------------*/
+.page3
+{
+    width: 100%;
+    height: 890px;
+    background-color:  #eef0eb;
+    padding: 80px 0px 20px;
+}
+.heading1
+{
+    color: #80714c;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.line3
+{
+    width: 100px;
+    height: 1.5px;
+    background-color: #80714c;
+    margin: auto;
+}
+.picture3
+{
+    margin-top: 40px;
+    width: 100%;
+    height: 713px;
+    background-image: url(images/room4.png);
+    background-size: cover;
+    
+}
+/* page4--------------------------------------------------------------------------------- */
+.page4
+{
+    height: 1600px;
+    width: 100%;
+    background-color: #eef0eb;
+    padding: 20px 0px 80px ;
+}
+.top
+{
+    height: 300px;
+}
+.top-img
+{
+    height: 300px;
+    width: 524px;
+    margin-left: 130px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.top-img img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.top-img:hover img{
+    transform: scale(1.1);
+}
+
+.bottom
+{
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 100px 10px 100px ;
+}
+.bottom p{
+    width: 25%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #404040;
+    
+}
+.side-img
+{
+    height: 500px;
+    width: 75%;
+    margin-left: 60px;
+    overflow: hidden;
+    margin-top: 40px;
+    
+}
+.side-img img{
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.side-img:hover img{
+    transform: scale(1.1);
+}
+.next-pg
+{
+    height: 600px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pic{
+    height: 500px;
+    width: 75%;
+    background-image: url(images/pg4.1.png);
+    background-position: center;
+    background-size: cover;
+}
+.lifestyle
+{
+    width: 25%;
+    height: 500px;
+    padding: 100px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    /* margin: 100px 0px 100px 0px ; */
+}
+.head{
+    color: #80714c;
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lifestyle p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+/* Footer------------------------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+    height: 535px;
+    padding-top: 60px;
+    padding-left: 35px;
+    background-color: #80714c;
+    color: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.foot-panel1
+{
+    font-size: 24px;
+    height: 28px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+}
+.foot-panel2
+{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+ul a{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.subpanel3
+{
+    margin-top: 18px;
+}
+.download_app
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.connect
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.newsletter
+{
+    margin-top: 18px;
+}
+.subscribe
+{
+    border: 1px solid white;
+    height: 60px;
+    pad: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+    cursor: pointer;
+
+}
+.foot-panel3
+{
+    height: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.pages{
+    
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
+.subpanel3 i:hover
+{
+    transform: scale(1.1);
+}
+
+
+

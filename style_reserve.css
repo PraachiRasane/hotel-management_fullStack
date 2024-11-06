@@ -1,0 +1,206 @@
+.header {
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.language {
+    font-size: larger;
+}
+.lang {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #80714c;
+    height: 300px;
+}
+.logo {
+    background-image: url(images/leela-logo.png);
+    background-size: contain;
+    height: 65px;
+    width: 70px;
+}
+.lline {
+    width: 450px;
+    height: 1px;
+    background-color: white;
+}
+.txt h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: white;
+}
+.sline {
+    width: 375px;
+    height: 0.5px;
+    background-color: white;
+}
+.gallery {
+    padding-bottom: 30px;
+}
+.gallery a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.btn {
+    background-color: #80714c;
+    color: white;
+    font-weight: 600;
+    height: 50px;
+    width: 100%;
+    font-size: larger;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.85;
+}
+.book {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/banner-img.jpg") center/cover no-repeat;
+    color: #fff;
+    padding: 40px 60px;
+}
+.book-form {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto;
+    gap: 50px 10px;
+}
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.book-form input[type = "submit"] {
+    margin: 18px 0 0 0;
+    background: var(--dark);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.book-form label, .book-form input {
+    width: 100%;
+}
+.book-form label {
+    font-weight: 600;
+    font-size: x-large;
+    word-spacing: 5px;
+    padding-bottom: 8px;
+}
+.book-form input:not(.btn) {
+    margin: 4px 0 16px 0;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+}
+.book-form input:focus {
+    outline: 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+#dyn2 , #b1 {
+    display: none;
+    
+}
+
+
+
+
+
+/* Footer------------------------------------------------------------------------------------------------------------------------------------------------ */
+footer{
+    height: 535px;
+    padding-top: 60px;
+    padding-left: 35px;
+    background-color: #80714c;
+    color: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.foot-panel1
+{
+    font-size: 24px;
+    height: 28px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+}
+.foot-panel2
+{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+ul a{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.subpanel3
+{
+    margin-top: 18px;
+}
+.download_app
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.connect
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.newsletter
+{
+    margin-top: 18px;
+}
+.subscribe
+{
+    border: 1px solid white;
+    height: 60px;
+    pad: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+}
+.foot-panel3
+{
+    height: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.pages{
+    
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
+.subpanel3 i:hover
+{
+    transform: scale(1.1);
+}

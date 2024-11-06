@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="subscribe.css">
+</head>
+<body>
+    <div class="header">
+        <div class="lang-sec">
+            <div class="lang">
+                <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                <select class="language">
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Marathi</option>
+                    <option>Gujarati</option>
+                    <option>French</option>
+                    <option>Greek</option>
+                </select>|
+            </div>
+            <a>Manage Bookings    </a>|
+            <a onclick="meeting()">Meetings    </a>|
+            <a onclick="rewards()">Rewards  </a>
+        </div>
+    </div>
+    <div class="body1">
+        <div class="navbar">
+            <a href="index.html"><div class="logo"></div></a>
+
+            <div class="about us">
+                <a href="index.html">HOME</a>
+            </div>
+            <div class="stay">
+                <a href="stay.html">STAY</a>
+            </div>
+            <div class="dine">
+                <a href="dine.html">DINE</a>
+            </div>
+            <div class="gallery">
+                <a href="gallery.html">GALLERY</a>
+            </div>
+            
+            <div class="more">
+                <a href="contactus.html">CONTACT US</a>
+            </div>
+            <div class="empty_cont"></div>
+            <div class="reserve-box">
+            <div class="reserve">
+                <a href="Reserve.html">R E S E R V E</a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  <div class="page">
+    <div class="register">
+        <p>SUBSCRIPTION </p><br><br>
+        <form name="submit-to-google-sheet">
+            <input id="Name" type="text" name="Name" placeholder="Your Name" required><br><br>
+            <input type="email" name="Email" id="Email" placeholder="Your Email id" required><br><br><br>
+            <button type="Submit" id="btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw09LwhlRzDMEnaMWkMZhxH8vA_7Yo85UMVgKo7fW9HF0kYZf_Sfyi48V6eXOE00w/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<script>
+   
+    document.getElementById("btn").addEventListener("click", function() {
+        var email = document.getElementById("Email").value;
+
+        // Regular expression to validate email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Check if email is valid
+        if (email.match(emailRegex)) {
+            alert("Subscribed Successfully");
+        } else {
+            alert("Please enter a valid email address");
+        }
+    });
+</script>
+</div>
+<footer>
+    <div class="foot-panel1">
+        <h3>THE LEHLANI PALACE </h3>
+    </div>
+    <div class="foot-panel2">
+        <ul>
+            <h4>GET TO KNOW US</h4>
+            <a>Company information</a>
+            <a>Careers</a>
+            <a>FAQs</a>
+            <a>Contact Us</a>
+        </ul>
+        <ul>
+            <h4>EXPERIENCE WITH US</h4>
+            <a>Blog</a>
+            <a>Plan Your Visit</a>
+            <a>Getting Here</a>
+            <a>Visitor Services & Amenities</a>
+            <a>Hotel & Flight Package</a>
+        </ul>
+        <div class="subpanel3">
+            <h4>DOWNLOAD OUR APP</h4>
+        <div class="download_app">
+            <div class="app_store">
+                <i class="fa-brands fa-app-store fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            <div class="gplay">
+                <i class="fa-brands fa-google-play fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <h4>CONNECT WITH US </h4>
+        <div class="connect">
+            <div class="twitter">
+                <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            <div class="insta">
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            <div class="fb">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        
+        </div>
+        <div class="newsletter">
+        <form name="submit-to-google-sheet">
+            <h4>NEWSLETTER</h4>
+            <p>Subscribe for latest updates and events.</p>
+            <div class="subscribe" id="subscribeBtn" name="emailid ">SUBSCRIBE</div>
+        </form>
+        </div>
+        
+        
+
+    </div>
+    <div class="foot-panel3">
+        <div class="pages">
+            <a>Trademark Notice </a>|
+            <a>Privacy Notice</a><br>
+            <a>Security Advisory</a>|
+            <a>Terms of Use</a><br>
+        </div>
+        <div class="copyright">
+            © 2024 The Lehlani Palace . All Rights Reserved.
+        </div>
+    </div>
+</footer>
+<script src="home.js"></script>
+
+</body>
+</html>

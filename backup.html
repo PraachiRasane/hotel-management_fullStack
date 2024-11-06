@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Your Luxury Experience At Our 5 Star Hotel | Lehlani</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style_reserve.css">
+        
+    </head>
+    <body>
+        <div class="header">
+            <div class="language">
+                <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
+                <select class="lang">
+                    <option value="1">English</option>
+                    <option value="2">Hindi</option>
+                    <option value="3">Marathi</option>
+                    <option value="4">Gujarati</option>
+                </select> |
+                <a>Manage Bookings</a> |
+                <a>Meetings</a> |
+                <a>Rewards</a>
+            </div>
+        </div>
+        <div class="sec1">
+            <div class="logoc"><a href="MP.html"><div class="logo"></div></a></div>
+            <div class="lline"></div>
+            <div class="txt">
+                <h1>BOOK YOUR STAY</h1>
+            </div>
+            <div class="sline"></div><br>
+            <div class="gallery"><a>GALLERY</a></div>
+        </div>
+        <br><br>
+        <!-- FORM 1---------------------------------------------------------------------------------->
+        <div class = "book" id="dyn">
+            <form class = "book-form" name="bform" action="http://localhost:3000/submitBooking" method="post">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date" name="cindate" min="2024-04-25" required value="2024-04-25">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" name="coutdate" min="2024-04-26" id = "chekout-date" value="2024-04-26" required>
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" max="15" value = "1" name="adult" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "0" max="10" value = "1" name="child" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Children Age: </label>
+                    <input type = "number" min = "1" max="12" value = "1" name="childAge" id = "ca">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" max="10" value = "1" name="room" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Save" onclick="document.getElementById('b1').style.display='inline'">
+                </div>
+                <div class = "form-item">
+                    <input type = "reset" class = "btn" value = "Clear">
+                </div>
+                <div class = "form-item">
+                    <input type = "button" class = "btn" id="b1" value = "Next" onclick="document.getElementById('dyn2').style.display='block'">
+                </div>
+            </form>
+            
+        </div>
+
+        <!-- <script src="GoogleSheet1.js"></script> -->
+
+
+        <br><br>
+
+        <!--FORM 2--------------------------------------------->
+        <div class="book" id="dyn2">
+            <style>
+                p {
+                    text-align: center;
+                    font-size: xx-large;
+                }
+            </style>
+            <p><b>Personal Information</b></p>
+            <hr>
+            <br><br>
+            <form class = "book-form" name="piform"action="http://localhost:3000/submitPersonalInfo" method="post">
+                <div class = "form-item">
+                    <label for = "fname">First name: </label>
+                    <input type = "text" id = "fname" name="fn" minlength="3" maxlength="20" required pattern="^[A-Za-z]+$">
+                    (Only Letters Allowed)
+                </div>
+                <div class="form-item">
+                    <label for="sname">Last name: </label>
+                    <input type="text" id="sname" name="sn" minlength="3" maxlength="20" required pattern="^[A-Za-z]+$">
+                    (Only Letters Allowed)
+                </div>
+                <div class = "form-item">
+                    <label for="dob">Date Of Birth: </label>
+                    <input type="date" id="dob" name="dateofbirth" required>
+                </div>
+                <div class="form-item">
+                    <label for="phno">Mobile Number: </label>
+                    <input type="tel" maxlength="10" id = "phno" name="mno" required pattern="^[0-9]{10}$">
+                </div>
+                <div class = "form-item">
+                    <label for="mail">Email: </label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+                <div class="form-item">
+                    <input type="submit" class="btn" value="Submit" onclick="window.alert('Thank you! You will shortly recieve a mail, on your Registered Email ID, specifying the steps to be followed.')">
+                </div>
+                <div class = "form-item">
+                    <input type = "reset" class = "btn" value = "Clear">
+                </div>
+            </form>
+        </div>
+        <br><br>
+
+        <!--FOOTER------------------------------------------------>
+        <footer>
+            <div class="foot-panel1">
+                <h3>THE LEHLANI PALACE </h3>
+            </div>
+            <div class="foot-panel2">
+                <ul>
+                    <h4>GET TO KNOW US</h4>
+                    <a>Company information</a>
+                    <a>Careers</a>
+                    <a>FAQs</a>
+                    <a>Contact Us</a>
+                </ul>
+                <ul>
+                    <h4>EXPERIENCE WITH US</h4>
+                    <a>Blog</a>
+                    <a>Plan Your Visit</a>
+                    <a>Getting Here</a>
+                    <a>Visitor Services & Amenities</a>
+                    <a>Hotel & Flight Package</a>
+                </ul>
+                <div class="subpanel3">
+                    <h4>DOWNLOAD OUR APP</h4>
+                <div class="download_app">
+                    <div class="app_store">
+                        <i class="fa-brands fa-app-store fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="gplay">
+                        <i class="fa-brands fa-google-play fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <h4>CONNECT WITH US </h4>
+                <div class="connect">
+                    <div class="twitter">
+                        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="insta">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="fb">
+                        <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                
+                </div>
+                <div class="newsletter">
+                    <form name="submit-to-google-sheet">
+                        <h4>NEWSLETTER</h4>
+                        <p>Subscribe for latest updates and events.</p>
+                        <div class="subscribe" id="subscribeBtn" name="emailid ">SUBSCRIBE</div>
+                    </form>
+                    </div>
+    
+            </div>
+            <div class="foot-panel3">
+                <div class="pages">
+                    <a>Trademark Notice </a>|
+                    <a>Privacy Notice</a><br>
+                    <a>Security Advisory</a>|
+                    <a>Terms of Use</a><br>
+                </div>
+                <div class="copyright">
+                    © 2024 Marina Bay Sands. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <!-- <script src="server.js"></script> -->
+        <script src="home.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<br><br>
+
+<!--FORM 2--------------------------------------------->
+<div class="book" id="dyn2">
+    <style>
+        p {
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+    <p><b>Personal Information</b></p>
+    <hr>
+    <br><br>
+    <form class = "book-form" name="piform"action="http://localhost:3000/submitPersonalInfo" method="post">
+        <div class = "form-item">
+            <label for = "fname">First name: </label>
+            <input type = "text" id = "fname" name="fn" minlength="3" maxlength="20" required pattern="^[A-Za-z]+$">
+            (Only Letters Allowed)
+        </div>
+        <div class="form-item">
+            <label for="sname">Last name: </label>
+            <input type="text" id="sname" name="sn" minlength="3" maxlength="20" required pattern="^[A-Za-z]+$">
+            (Only Letters Allowed)
+        </div>
+        <div class = "form-item">
+            <label for="dob">Date Of Birth: </label>
+            <input type="date" id="dob" name="dateofbirth" required>
+        </div>
+        <div class="form-item">
+            <label for="phno">Mobile Number: </label>
+            <input type="tel" maxlength="10" id = "phno" name="mno" required pattern="^[0-9]{10}$">
+        </div>
+        <div class = "form-item">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" required>
+        </div>
+        <div class="form-item">
+            <input type="submit" class="btn" value="Submit" onclick="window.alert('Thank you! You will shortly recieve a mail, on your Registered Email ID, specifying the steps to be followed.')">
+        </div>
+        <div class = "form-item">
+            <input type = "reset" class = "btn" value = "Clear">
+        </div>
+    </form>
+</div>
+<br><br>

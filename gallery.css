@@ -1,0 +1,460 @@
+.header
+{
+    height: 30px;
+    background-color: black;
+    color: white;
+    padding-right: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+}
+.lang-sec
+{
+    position: relative;
+    right: inherit;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lang-sec a{
+    text-decoration: none;
+    color: white;
+}
+.language
+{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.language i{
+    margin-top: 4px;
+}
+.navbar{
+    height: 60px;
+    background-color:#80714c;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navbar a{
+    font-family:'Times New Roman', Times, serif ;
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+}
+.navbar:hover
+{
+    background-color:#80714c;
+    color:white;
+
+}
+.logo{
+    background-image: url("images/leela-logo.png");
+    background-size: contain;
+    height: 65px;
+    width: 70px;
+}
+.empty_cont
+{
+    width: 300px;
+}
+.reserve
+{
+    position: relative;
+    right: inherit;
+    border: 2px solid white;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+}
+.reserve:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+}
+
+/* Lehlani Gallery animation */
+@keyframes lehlani-img
+{
+    0% {background-image: url(images/LEHLANI1.png);}
+    17% {background-image: url(images/LEHLANI2.png);}
+    34% {background-image: url(images/LEHLANI3.png);}
+    51% {background-image: url(images/LEHLANI4.png);}
+    68% {background-image: url(images/LEHLANI5.png);}
+    85% {background-image: url(images/LEHLANI6.png);}
+    100% {background-image: url(images/LEHLANI1.png);}
+}
+.lehlani
+{
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    animation-name: lehlani-img;
+    animation-duration: 2s;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+} 
+/* Page 2 -------------------------------------------------------------- */
+.page2
+{
+    width: 100%;
+    height: 3500px;
+    background-color: #eef0eb;
+}
+.gallery1
+{
+    height: 60px;
+    background-color: #80714c;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+    color: white;
+    border: 1.5px solid #eef0eb;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.navgal{
+    position: sticky;
+    top: 0px;
+    height: 60px;
+    background-color:#80714c;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navgal a{
+    font-family:'Times New Roman', Times, serif ;
+    color:white;
+    text-decoration: none;
+    font-weight:bold;
+}
+.txt
+{
+    padding-top: 80px;
+    font-size: 24px;
+    height: 30px;
+    padding-left: 40px;
+    color:#80714c;
+}
+.line
+{
+    width: 80px;
+    height: 1.5px;
+    background-color: #80714c;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.pictures
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box
+{
+    height: 210px;
+    width: 310px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.box1
+{
+    background-image: url(images/o1.png);
+}
+.box2
+{
+    background-image: url(images/o2.png);
+}
+.box3
+{
+    background-image: url(images/o3.png);
+}
+.box4
+{
+    background-image: url(images/o4.png);
+}
+.box5
+{
+    background-image: url(images/r1.png);
+}
+.box6
+{
+    background-image: url(images/r2.png);
+}
+.box7
+{
+    background-image: url(images/r3.png);
+}
+.box8
+{
+    background-image: url(images/r4.png);
+}
+.box9
+{
+    background-image: url(images/r5.png);
+}
+.box10
+{
+    background-image: url(images/r6.png);
+}
+.box11
+{
+    background-image: url(images/r7.png);
+}
+.box12
+{
+    background-image: url(images/r8.png);
+}
+.box13
+{
+    background-image: url(images/r9.png);
+}
+.box14
+{
+    background-image: url(images/r10.jpg);
+}
+.box15
+{
+    background-image:none;
+}
+.box16
+{
+    background-image:none;
+}
+.box17
+{
+    background-image: url(images/r11a.png);
+}
+.box18
+{
+    background-image: url(images/r11.png);
+}
+.box19
+{
+    background-image: url(images/r12.png);
+}
+.box20
+{
+    background-image: url(images/r13.png);
+}
+.box21
+{
+    background-image: url(images/r14.jpg);
+}
+.box22
+{
+    background-image:none;
+}
+.box25
+{
+    background-image: url(images/r15.jpg);
+}
+.box26
+{
+    background-image: url(images/r16.png);
+}
+.box27
+{
+    background-image: url(images/r17.png);
+}
+.box28
+{
+    background-image: url(images/r18.png);
+}
+.box29
+{
+    background-image: url(images/r19.png);
+}
+.box30
+{
+    background-image: url(images/r20.png);
+}
+.box31
+{
+    background-image: url(images/r21.png);
+}
+.box32
+{
+    background-image: none;
+}
+.box33
+{
+    background-image: url(images/r22.png);
+}
+.box34
+{
+    background-image: url(images/r23.png);
+}
+.box35
+{
+    background-image: url(images/r24.png);
+}
+.box36
+{
+    background-image: url(images/r25.png);
+}
+.box37
+{
+    background-image: url(images/r26.jpg);
+}
+.box38
+{
+    background-image: url(images/r27.png);
+}
+.box39
+{
+    background-image: url(images/r28.png);
+}
+.box40
+{
+    background-image:none;
+}
+footer{
+    height: 535px;
+    padding-top: 60px;
+    padding-left: 35px;
+    background-color: #80714c;
+    color: #fafafa;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.foot-panel1
+{
+    font-size: 24px;
+    height: 28px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+}
+.foot-panel2
+{
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+ul a{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.subpanel3
+{
+    margin-top: 18px;
+}
+.download_app
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.connect
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.newsletter
+{
+    margin-top: 18px;
+}
+.subscribe
+{
+    border: 1px solid white;
+    height: 60px;
+    pad: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+.subscribe:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+    cursor: pointer;
+}
+.foot-panel3
+{
+    height: 80px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.pages{
+    
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
+.subpanel3 i:hover
+{
+    transform: scale(1.1);
+}
+/* .seg1
+{
+    height: 200px;
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px;
+    margin: auto;
+}
+.seg2
+{
+    height: 100px;
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 20px;
+    margin: auto;
+}
+.seg3
+{
+    height: 150px;
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    margin: 20px;
+    margin: auto;
+}
+.txt1
+{
+    font-size: 24px;
+    height: 30px;
+
+    color:#80714c;
+}
+.pic{
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+}
+.para
+{
+    margin: 30px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404040;
+    margin-right: 50PX;
+}
+.pic1
+{
+    background-image: url(images/r1.png);
+}
+.pic2
+{
+    background-image: url(images/r2.png);
+}
+.pic3
+{
+    background-image: url(images/r6.png);
+} */
