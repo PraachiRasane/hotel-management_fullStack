@@ -187,9 +187,17 @@
                 <form name="submit-to-google-sheet">
                     <h4>NEWSLETTER</h4>
                     <p>Subscribe for latest updates and events.</p>
-                    <div class="subscribe" id="subscribeBtn" name="emailid ">SUBSCRIBE</div>
+                    <div class="subscribe" id="subscribeBtn" name="emailid">SUBSCRIBE</div>
                 </form>
+                <button class = "subscribe1" onclick="calculateDistance()" id="distanceBtn">How far am I from here?</button>
+                <div id="mapContainer" style="display:none; text-align: center; padding: 10px;">
+                    <img src="images/maps.png" alt="Route Map" id="mapImage" />
+                    <p id="distanceResult"></p> <!-- Display distance result here -->
                 </div>
+            </div>
+            
+            
+
 
         </div>
         <div class="foot-panel3">
@@ -205,5 +213,6 @@
         </div>
     </footer>
     <script src="home.js"></script>
+    <script src="maps.js"></script>
 </body>
 </html>

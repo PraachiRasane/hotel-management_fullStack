@@ -9,6 +9,19 @@
     justify-content: right;
     align-items: center; 
 }
+#mapImage {
+    width: 70%; /* Adjust image width to be smaller */
+    max-width: 300px; /* Set maximum width so it doesn't get too large */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for a nicer look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+
+#distanceResult {
+    font-size: 16px; /* Font size for distance text */
+    color: #ffffff; /* Text color */
+    margin-top: 8px; /* Space between image and text */
+}
 .lang-sec
 {
     position: relative;
@@ -395,6 +408,25 @@ ul a{
     align-items: center;
 }
 .subscribe:hover
+{
+    background-color: rgba(255, 255, 255,0.7);
+    color: #80714c;
+    cursor: pointer;
+
+}
+.subscribe1
+{
+    border: 1px solid white;
+    height: 60px;
+    pad: 20px;
+    margin: 20px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.subscribe1:hover
 {
     background-color: rgba(255, 255, 255,0.7);
     color: #80714c;

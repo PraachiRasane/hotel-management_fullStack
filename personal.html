@@ -37,7 +37,7 @@
             <p><b>Personal Information</b></p>
             <hr>
             <br><br>
-            <form class = "book-form" name="piform"action="http://localhost:3000/submitPersonalInfo" method="post">
+            <form class = "book-form" name="piform"action="http://localhost:3000/submitPersonalInfo" method="post" onsubmit="sendWhatsAppMessage(event)">
                 <div class = "form-item">
                     <label for = "fname">First name: </label>
                     <input type = "text" id = "fname" name="fn" minlength="3" maxlength="20" required pattern="^[A-Za-z]+$">
@@ -67,9 +67,28 @@
                     <input type = "reset" class = "btn" value = "Clear">
                 </div>
             </form>
-            
         </div>
 
+        <script>
+        function sendWhatsAppMessage(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+
+            const phoneInput = document.getElementById("phno").value;
+            const nameInput = document.getElementById("fname").value;
+            const message = encodeURIComponent(`Hello ${nameInput}, thank you for booking with Lehlani. We will send further details to your registered email.`);
+
+            if (phoneInput) {
+                const whatsappURL = `https://wa.me/${phoneInput}?text=${message}`;
+                window.open(whatsappURL, '_blank'); // Opens WhatsApp Web in a new tab
+            }
+
+            // Submit the form after WhatsApp message is opened
+            setTimeout(() => {
+                alert("Thank you! You will shortly receive a mail on your Registered Email ID, specifying the steps to be followed.");
+                event.target.submit(); // Submits the form after the alert and WhatsApp action
+            }, 1000);
+        }
+    </script>
         <!-- <script src="GoogleSheet1.js"></script> -->
 
 
